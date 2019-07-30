@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Discover the Pacific Northwest</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Discover the Pacific Northwest</h1>
+      <form id="schedule">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="hike" id="gorge" value="gorge">
+          <label class="form-check-label" for="gorge">Hike the Columbia River Gorge</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="hike" id="coast" value="coast">
+          <label class="form-check-label" for="coast">Discover the Oregon Coast</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="hike" id="mountain" value="mountain">
+          <label class="form-check-label" for="mountain">Climb a Mountain</label>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary" name="button">Schedule Your Adventure!</button>
+        </div>
+      </form>
+      <div id="display">
+        <p>Please select an adventure</p>
+      </div>
+      <div id="gorgeHike">
+        <form id="gorgeSchedule">
+          <div class="form-group event">
+            <label for="selectGorgeHike">Select a Gorge Hike</label>
+            <select class="form-control" id="selectGorgeHike">
+              <option value="cape">Cape Horn — March 8th</option>
+              <option value="multnomah">Multnomah Falls — June 12th</option>
+              <option value="beacon">Beacon Rock — April 4th</option>
+              <option value="table">Table Mountain — May 21st</option>
+              <option value="dog">Dog Mountain June 1st</option>
+            </select>
+          </div>
+          <div class="form-group event">
+            <label for="hikerEmail">Email address</label>
+            <input type="email" class="form-control" id="hikerEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <button type="submit" class="btn btn-primary" name="button">Confirm your adventure!</button>
+        </form>
+        <div id="confirmationGorge">
+          <p>Thanks for scheduling the <span class="gorgeEvent"></span> hike on <span class="gorgeDate"></span>. We will be emailing a confirmation to you at <span class="userEmail"></span>.</p>
+        </div>
+      </div>
+
+      <div id="coastHike">
+        <form id="coastSchedule">
+          <div class="form-group event">
+            <label for="selectCoastHike">Select an Oregon Coast Hike</label>
+            <select class="form-control" id="selectCoastHike">
+              <option value="saddle">Saddle Mountain — June 12th</option>
+              <option value="neahkanie">NeahKanie Mountain — July 8th</option>
+              <option value="cascade">Cascade Head — August 4th</option>
+            </select>
+          </div>
+          <div class="form-group event">
+            <label for="hikerEmail2">Email address</label>
+            <input type="email" class="form-control" id="hikerEmail2" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <button type="submit" class="btn btn-primary" name="button">Confirm your adventure!</button>
+        </form>
+        <div id="confirmationCoast">
+          <p>Thanks for scheduling the <span class="coastEvent"></span> hike on <span class="coastDate"></span>. We will be emailing a confirmation to you at <span class="userEmail2"></span>.</p>
+        </div>
+      </div>
+
+      <div id="mountainHike">
+        <form id="mountainSchedule">
+          <div class="form-group event">
+            <label for="selectMountainHike">Climb a Mountain</label>
+            <select class="form-control" id="selectMountainHike">
+              <option value="mtHood">Climb Mt Hood — June 12th</option>
+              <option value="mtStHelens">Climb Mt St Helens — July 8th</option>
+              <option value="mtAdams">Climb Mt Adams — August 4th</option>
+            </select>
+          </div>
+          <div class="form-group event">
+            <label for="hikerEmail3">Email address</label>
+            <input type="email" class="form-control" id="hikerEmail3" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <button type="submit" class="btn btn-primary">Schedule Your Adventure!</button>
+        </form>
+        <div id="confirmationMountain">
+          <p>Thanks for scheduling the <span class="mountainEvent"></span> hike on <span class="mountainDate"></span>. We will be emailing a confirmation to you at <span class="userEmail3"></span>.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

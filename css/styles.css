@@ -1,0 +1,58 @@
+/* begin Century Gothic */
+@font-face {
+  font-family: 'Century Gothic';
+  src : url('../fonts/centuryGothic/CenturyGothic.eot');
+  src : url('../fonts/centuryGothic/CenturyGothic.eot?#iefix') format('eot'),
+        url('../fonts/centuryGothic/CenturyGothic.woff2') format('woff2'),
+        url('../fonts/centuryGothic/CenturyGothic.woff') format('woff'),
+        url('../fonts/centuryGothic/CenturyGothic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+/* end Century Gothic */
+body {
+  font-family: 'Century Gothic', serif;
+  font-weight: 400;
+  font-style: serif;
+  background-color: #7CACD2;
+  background-image: url("../img/scheduleHike.jpg");
+  background-repeat: no-repeat;
+  background-size: cover cover;
+  background-position: left;
+}
+button {
+  margin: 1em 0 1em -.25em;
+}
+
+#gorgeHike {
+  display: none;
+}
+#coastHike {
+  display: none;
+}
+#mountainHike {
+  display: none;
+}
+#display {
+  display: none;
+}
+#confirmationGorge {
+  display: none;
+}
+#confirmationCoast {
+  display: none;
+}
+#confirmationMountain {
+  display: none;
+}
+.event {
+  width: 35%;
+}
+.event label {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-variant-caps: all-small-caps;
+}
